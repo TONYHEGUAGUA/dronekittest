@@ -39,5 +39,8 @@ def arm_and_takeoff(aTargetAltitude):
 
 vehicle = connect("udp:192.168.4.2:14550", wait_ready=True)
 print("drone connected")
+time.sleep(1)
+print("start to takeoff")
 arm_and_takeoff(5)
+print("takeoff completed")
 #vehicle.mode = VehicleMode("LOITER")
